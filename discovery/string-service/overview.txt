@@ -1,0 +1,21 @@
+1. 项目实践+组件集成
+基于 DiscoveryClient 组件构建一个简单的string-service微服务
+服务结构按照Go-kit层次进行组织
+
+transport-endpoint-service
+
+
+项目结构
+
+对外提供两个http接口
+/health接口用于进行健康检查，
+/op/{type}/{a}/{b} 对外提供字符串操作，
+其中的type参数可以为Concat 和 Diff，分别提供字符串连接和获取两字符串相同字符的功能
+a，b 为所需要操作的字符串
+
+
+各层搭建
+1. Service
+2. endpoint
+3. transport
+4. main

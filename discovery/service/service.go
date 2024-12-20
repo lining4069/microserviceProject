@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 	"errors"
+	"microservicePeoject/common/discover"
 	"microservicePeoject/discovery/config"
-	"microservicePeoject/discovery/discover"
 )
 
 type Service interface {

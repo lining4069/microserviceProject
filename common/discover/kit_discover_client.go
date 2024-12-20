@@ -9,6 +9,10 @@ import (
 	"sync"
 )
 
+/**
+借助Go-kit服务注册与发现包和consul交互，实现DiscoveryClient接口
+*/
+
 type KitDiscoverClient struct {
 	Host   string
 	Port   int
